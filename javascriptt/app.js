@@ -14,7 +14,7 @@ correo[i] = prompt("Email de contacto");
 contactos[i] = nombre[i] + " " 
 + " " + numero[i] + " " + correo[i]
 + " " + direccion[i];
-alert("Contacto Guardado: " + nombre +" " + numero +" "  + direccion +" "  + correo );
+alert("Contacto Guardado: ");
 return  i = i + 1;
 }
 
@@ -36,7 +36,7 @@ function buscar(){
 		}
 	}
 	if(results==0)
-		document.getElementById('mostrador').innerHTML += ("no tienes ningún contacto registrado con ese nombre");
+		document.getElementById('mostrador').innerHTML += ("no existen coincidencias");
 }
 function menu(){
 	var menu = prompt("Bienvenido al menú, oprime el número correspondiente a la opción deseada y presiona enter: 1. Añadir Contacto  /  2. Ver Lista de contactos  /  3. Buscar un contacto");
