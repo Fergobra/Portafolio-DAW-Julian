@@ -48,7 +48,7 @@ var cronometro;
                 if(contador_s==-1)
                 {
                     document.getElementById('boton').innerHTML=('<h3>EL TIEMPO HA FINALIZADO</h3> <hr>');
-                    contador_s=-1;
+                    contador_s=0;
 
                 }
                 
