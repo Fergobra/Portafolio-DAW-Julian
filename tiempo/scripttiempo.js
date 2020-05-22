@@ -34,3 +34,30 @@ var cronometro;
             ,1000);
  
     }
+
+    function temporizador(){
+        var intro = prompt("¿Cuantos segundos quieres establecer el temporizador?");
+
+        contador_s =intro;
+        contador_m =0;
+        s = document.getElementById("segundos");
+        m = document.getElementById("minutos");
+ 
+        cronometro = setInterval(
+            function(){
+                if(contador_s==-1)
+                {
+                    document.getElementById('boton').innerHTML=('<h3>EL TIEMPO HA FINALIZADO</h3> <hr>');
+                    contador_s=-1;
+
+                }
+                
+                else {
+                s.innerHTML = contador_s;
+                contador_s--;
+                }
+ 
+            }
+            ,1000);
+
+    }
