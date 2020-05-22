@@ -45,11 +45,11 @@ var cronometro;
  
         cronometro = setInterval(
             function(){
-                if(contador_s==-1)
+                if(contador_s==0)
                 {
                     document.getElementById('boton').innerHTML=('<h3>EL TIEMPO HA FINALIZADO</h3> <hr>');
                     contador_s=0;
-
+                    document.getElementById('boton2').innerHTML=('<a href="index.html"><button class="twelve columns button-primary">RESET</button></a>');
                 }
                 
                 else {
