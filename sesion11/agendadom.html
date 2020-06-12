@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="agendadom.css">
+    <script src="agendadom.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns titulo">
+                <h3 align="center" class="tituloo">Agenda WEB</h3>
+            </div>
+        </div>
+        <div class="row bor">
+            <div class="six columns">
+                <h5 class>Agregar Contacto</h5>
+                <label for="nombrec"> Nombre de Contacto</label>
+                <input type="text" placeholder="Nombre..." id="nombrec" class="twelve columns" required>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="numeroc" class="">Número</label>
+                        <input type="text" class="" placeholder="ej. 01554566" id="numeroc" required>
+                    </div>
+                    <div class="six columns">
+                        <label for="correoc" class="">Correo</label>
+                        <input type="text" class="" placeholder="ejemplo@dominio.com" id="correoc" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+
+                    <label for="direccionc">Dirección</label>
+                    <input type="text" placeholder="dirección" id="direccionc" class="twelve columns" required>
+                    <button class="twelve columns bver" onclick="guardar()">
+                        Guardar
+                    </button>                   
+                </div>
+                </div>
+            </div>
+            <div class="six columns">
+                <h5 class>Contactos</h5>
+                <input type="text" class="twelve columns" id="buscarr" placeholder="Buscar Contacto">
+                <button class="bver" onclick="buscar()">
+                    buscar
+                </button>
+                <table class="u-full-width" id="tabla">
+                    <thead>
+                        <tr>
+                          <th>Nombre</th>
+                        </tr>
+                      </thead>
+                      
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
