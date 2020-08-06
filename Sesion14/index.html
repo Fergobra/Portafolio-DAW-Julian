@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="geostyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="geo14.js"></script>
+    <title>PlaceKeeper</title>
+</head>
+<body>
+        <div class="row bar">
+            <center> <br>
+                <h2>PlaceKeeper</h2> 
+            </center>
+        </div>
+    <div class="container caja">
+        <div class="row">
+                <br> <br>
+                    <div>    
+                            <form name="formula">
+                                <label for="nombre">Nombre del lugar.</label>
+                                <input type="text" name="nombre" id="nomb" class="twelve columns">
+                                <label for="descripcion">Descripción del lugar</label>
+                                <input type="text" name="descripcion" id="desc" class="twelve columns cajalarga">
+                                <label for="ubicacion">Ubicación</label> 
+                                <input type="text" name="coordenadas" id="coordss" class="ten columns leftt">
+                                <img src="https://cdn0.iconfinder.com/data/icons/multimedia-solid-30px/30/location_map_marker_pin-512.png" alt=""  class="one columns" onclick="obtenerlocalizacion()">
+                                <video autoplay id="video" class="twelve columns"> </video>
+                               
+                            </form>
+                            <button class="twelve columns" onclick='capturar()' id="fotiko">
+                                Tomar Foto
+                            </button>
+                        <button class="twelve columns" onclick='guardardatos()' id="publicar">
+                            GUARDAR LUGAR
+                        </button>
+                    </div>
+        </div>
+        <div id="n0">
+
+        </div>
+        
+    </div>
+</body>
+</html>
