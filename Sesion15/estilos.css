@@ -1,0 +1,47 @@
+* {
+    color: white;
+    
+}
+body{
+    background-color: #42429b;
+}
+.izq {
+    background-color: #42429b;
+    height: 100%;
+}
+.der {
+    background-color: #272757;
+}
+.margder{
+    margin-left: 30px;
+
+}
+.gde{
+    font-size: large;
+}
+.ch{
+    font-size: small;
+}
+.rait{
+    float: right;
+}
+.margizq{
+    margin-right: 25px;
+}
+.margarr{
+    margin-top: 25px;
+}
+.poster{
+    height: 278px;
+    width: 190px;
+    
+}
+.xtragde{
+    font-size: x-large;
+}
+.logo{
+    margin-top: 35px;
+}
+.ari:hover{
+    background-color: teal;
+}
